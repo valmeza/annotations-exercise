@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Author extends Person {
+    @SuppressWarnings({"all","unchecked"})
     private List books;
 
+    @SuppressWarnings({"all","unchecked"})
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
         books = new ArrayList();
@@ -15,15 +17,18 @@ public class Author extends Person {
     /**
      * @deprecated Use publishedBooks instead
      */
+    @SuppressWarnings({"all","unchecked"})
     @Deprecated
     public List<String> getBooks() {
         return books;
     }
 
+    @SuppressWarnings({"all","unchecked"})
     public List<String> publishedBooks() {
         return books;
     }
 
+    @SuppressWarnings({"all","unchecked"})
     public void addBook(String book) {
         books.add(book);
     }
